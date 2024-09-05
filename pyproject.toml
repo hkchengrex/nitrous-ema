@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.yapf]
+based_on_style = "pep8"
+indent_width = 4
+column_limit = 100
+
+[project]
+name = "nitrous_ema"
+version = "0.0.1"
+authors = [{ name = "Rex Cheng", email = "hkchengrex@gmail.com" }]
+description = "Fast and simple post-hoc EMA (Karras et al., 2023) with minimal `.item()` calls."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  'torch >= 2.0',
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["nitrous_ema"]
+
+[project.urls]
+Homepage = "https://github.com/hkchengrex/nitrous-ema"
+Issues = "https://github.com/hkchengrex/nitrous-ema/issues"

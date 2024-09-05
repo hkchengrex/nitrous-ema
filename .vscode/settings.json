@@ -1,0 +1,18 @@
+{
+    "[python]": {
+        "editor.formatOnSaveMode": "file",
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": null,
+        "editor.formatOnType": false,
+      },
+    
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true
+    },
+    "editor.defaultFormatter": "eeyore.yapf",
+    "remote.extensionKind": {
+        "GitHub.copilot": ["ui"],
+      }
+}
