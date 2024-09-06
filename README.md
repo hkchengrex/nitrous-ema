@@ -1,5 +1,6 @@
 # nitrous-ema
 Fast and simple post-hoc EMA (Karras et al., 2023) with minimal `.item()` calls.
+~78% lower overhead than ema_pytorch.
 
 ## Installation
 ```bash
@@ -55,6 +56,8 @@ with torch.no_grad():
 
 
 # Speed Test
+
+TL;DR: Ours has ~78% lower overhead than ema_pytorch.
 
 ```bash
 Without EMA:  21.385406732559204
