@@ -12,7 +12,7 @@ pip install nitrous-ema
 A fork of https://github.com/lucidrains/ema-pytorch
 
 Features added:
-- No more `.item()` calls during update which would force a device synchronization and slows things down. `initted` and `step` are now stored as Python types on CPUs. They are still put into the state dict via `set_extra_state` and `get_extra_state`. 
+- No more `.item()` calls during update which would force a device synchronization and slow things down. `initted` and `step` are now stored as Python types on CPUs. They are still put into the state dict via `set_extra_state` and `get_extra_state`. 
 - Added a `step_size_correction` parameter to scale the weighting term (with geometric mean) when `update_every` is larger than 1. Otherwise the effective update rate would be too slow
 
 ## Starter script
